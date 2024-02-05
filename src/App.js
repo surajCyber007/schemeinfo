@@ -20,7 +20,7 @@ function App() {
                 <Link to="/saved">saved</Link>
               </li>
               <li>
-                <Link to="/liked">liked</Link>
+                <Link to="/liked">liked Scheme</Link>
               </li>
             </ul>
           </nav>
