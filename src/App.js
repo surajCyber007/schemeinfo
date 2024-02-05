@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App bg-violet-50 min-h-[100vh]">
       <Router>
-        <div className="p-4">
+        <div className="py-4">
           <nav>
-            <ul className="flex justify-between py-2 shadow-md w-[100%]">
+            <ul className="flex justify-between py-2 shadow-md w-[100%] px-4">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -24,12 +24,14 @@ function App() {
               </li>
             </ul>
           </nav>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/saved" element={<SavedSchemePage />} />
-            <Route path="/liked" element={<LikedSchemePage />} />
-            <Route path="/schemedetails" element={<SchemeDetailPage />} />
-          </Routes>
+          <div className="px-2">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/saved" element={<SavedSchemePage />} />
+              <Route path="/liked" element={<LikedSchemePage />} />
+              <Route path="/schemedetails" element={<SchemeDetailPage />} />
+            </Routes>
+          </div>
         </div>
       </Router>
     </div>
