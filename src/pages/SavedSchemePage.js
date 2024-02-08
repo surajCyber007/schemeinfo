@@ -20,6 +20,7 @@ const SavedSchemePage = () => {
   };
 
   const handleReadScheme = (scheme) => {
+    console.log(scheme);
     navigate("/schemedetails", { state: { scheme } });
   };
 
